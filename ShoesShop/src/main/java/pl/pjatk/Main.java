@@ -13,6 +13,7 @@ public class Main {
         System.out.println(shop.getPriceSneakers());
 
 
+
         SandalsSizeValidator sandalsSizeValidator = new SandalsSizeValidator();
         Sandals sandals = new Sandals(44,130,"adidos","red");
         sandals.pack();
@@ -32,12 +33,7 @@ public class Main {
         System.out.println(validate4);
 
 
-//        Validator validator = Validation.buildDefaultValidatorFactory().getValidator();
-//        Set<ConstraintViolation<Shop>> validate = validator.validate(shop);
-//        System.out.println(validate);
-//        Validator validator2 = Validation.buildDefaultValidatorFactory().getValidator();
-//        Set<ConstraintViolation<Shop>> validate2 = validator.validate(shop);
-//        System.out.println(validate2);
+
     }
 
 }
