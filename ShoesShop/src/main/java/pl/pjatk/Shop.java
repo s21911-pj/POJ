@@ -5,7 +5,7 @@ public class Shop {
     private int price;
     @SandalsSize
     private int size;
-    @SneakersSizePrice
+    @SneakersSize
     private int sizeSneakers;
     private int priceSneakers;
 

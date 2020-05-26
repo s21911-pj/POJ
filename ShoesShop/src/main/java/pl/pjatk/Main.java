@@ -11,12 +11,16 @@ public class Main {
         shop.setPrice(130);
         shop.setSize(43);
         System.out.println(shop.getPriceSneakers());
+
+
         SandalsSizeValidator sandalsSizeValidator = new SandalsSizeValidator();
-        sandalsSizeValidator.isValid(45,);
         Sandals sandals = new Sandals(44,130,"adidos","red");
         sandals.pack();
+
         HighBoots highBoots = new HighBoots(44,122,"best","brown");
         highBoots.pack();
+        highBoots.putOnTheShelf();
+
         Customer michal = new Customer("Michal",150);
 
         Validator validator = Validation.buildDefaultValidatorFactory ().getValidator ();
@@ -28,12 +32,12 @@ public class Main {
         System.out.println(validate4);
 
 
-        //Validator validator = Validation.buildDefaultValidatorFactory().getValidator();
-        //Set<ConstraintViolation<Shop>> validate = validator.validate(shop);
-        //System.out.println(validate);
-        //Validator validator2 = Validation.buildDefaultValidatorFactory().getValidator();
-        //Set<ConstraintViolation<Shop>> validate2 = validator.validate(shop);
-        //System.out.println(validate2);
+//        Validator validator = Validation.buildDefaultValidatorFactory().getValidator();
+//        Set<ConstraintViolation<Shop>> validate = validator.validate(shop);
+//        System.out.println(validate);
+//        Validator validator2 = Validation.buildDefaultValidatorFactory().getValidator();
+//        Set<ConstraintViolation<Shop>> validate2 = validator.validate(shop);
+//        System.out.println(validate2);
     }
 
 }

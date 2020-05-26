@@ -11,10 +11,7 @@ public class Sandals extends AllBoots implements Boots {
         this.cheap = cheap;
     }
 
-    @Override
-    public void putOnTheShelf() {
 
-    }
 
     @Override
     public void takeShoesOfTheShelf() {

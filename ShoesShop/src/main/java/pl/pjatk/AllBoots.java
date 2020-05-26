@@ -1,7 +1,11 @@
 package pl.pjatk;
 
 public class AllBoots {
+        @SandalsSize
+        @SneakersSize
         private int size;
+
+        @SandalsPrice
         private int price;
         private String mark;
         private String color;

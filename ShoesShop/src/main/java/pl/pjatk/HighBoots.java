@@ -7,7 +7,7 @@ public class HighBoots extends AllBoots implements Boots {
 
     @Override
     public void putOnTheShelf() {
-
+        System.out.println("Boots are put higher on the shelf");
     }
 
     @Override

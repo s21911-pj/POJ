@@ -10,12 +10,11 @@ import java.lang.annotation.Target;
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.FIELD)
-@Constraint(validatedBy = SandalsPriceValidator.class)
+@Constraint(validatedBy = SneakersSizeValidator.class)
 
 
-    public @interface SneakersSizePrice {
+    public @interface SneakersSize {
         public int size() default  42;
-        public int price() default 150;
         String message() default "Wrong price or size";
         Class<?>[] groups() default {};
         Class<? extends Payload>[] payload() default {};
