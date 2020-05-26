@@ -10,6 +10,7 @@ public class SandalsPriceValidator implements ConstraintValidator<SandalsPrice, 
     }
 
     public boolean isValid(Integer price, ConstraintValidatorContext context) {
+        System.out.println("o cho nie wiem co");
         return price >= 150;
     }
 }

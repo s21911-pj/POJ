@@ -3,7 +3,7 @@ package pl.pjatk;
 import javax.validation.Payload;
 import java.lang.annotation.Annotation;
 
-public class SneakersValidator implements SneakersSizePrice {//dlaczego każe mi wszystkie metody implementować?
+public class SneakersSizePriceValidator implements SneakersSizePrice {//dlaczego każe mi wszystkie metody implementować?
     public int size() {
         return 0;
     }

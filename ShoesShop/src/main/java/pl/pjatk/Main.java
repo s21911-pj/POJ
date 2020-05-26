@@ -11,7 +11,9 @@ public class Main {
         shop.setPrice(130);
         shop.setSize(43);
         System.out.println(shop.getPriceSneakers());
-        Sandals sandals = new Sandals(42,130,"adidos","red");
+        SandalsSizeValidator sandalsSizeValidator = new SandalsSizeValidator();
+        sandalsSizeValidator.isValid(45,);
+        Sandals sandals = new Sandals(44,130,"adidos","red");
         sandals.pack();
         HighBoots highBoots = new HighBoots(44,122,"best","brown");
         highBoots.pack();
@@ -22,7 +24,7 @@ public class Main {
         System.out.println (validate);
 
         Validator validator4 = Validation.buildDefaultValidatorFactory().getValidator();
-        Set<ConstraintViolation<SandalsSizeValidator>> validate4 = validator4.validate(Sandals);
+        Set<ConstraintViolation<SandalsSizeValidator>> validate4 = validator4.validate(sandalsSizeValidator);
         System.out.println(validate4);
 
 

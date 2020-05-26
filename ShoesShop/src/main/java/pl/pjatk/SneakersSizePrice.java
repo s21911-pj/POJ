@@ -10,7 +10,7 @@ import java.lang.annotation.Target;
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.FIELD)
-@Constraint(validatedBy = SandalsSizeValidator.class)
+@Constraint(validatedBy = SandalsPriceValidator.class)
 
 
     public @interface SneakersSizePrice {
